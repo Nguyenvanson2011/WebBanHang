@@ -1,0 +1,473 @@
+*{
+    margin: 0;
+    padding:0;
+}
+
+body{
+    font-family: sans-serif;    
+}
+
+:root {
+    --header-height: 80px;
+}
+
+.Bar{
+  width: 100%;
+}
+.Menu-bar{
+    display: flex;
+    width: 100%;
+    height: var(--header-height);
+    justify-content: space-between;
+    background:  rgb(155, 155, 240);
+    text-align:center; 
+    left:0;
+    font-size: 15px;
+    border-radius: 6px;
+}
+
+.Bar .logo{
+    text-align: right;
+    justify-content: center;
+    align-items: center;
+    line-height: var(--header-height);
+    font-size: 50px;
+    color: white;
+    margin-right: 10px;
+}
+
+.Menu-bar ul{
+    display: flex;
+    list-style: none;
+}
+
+
+.Menu-bar .menu-item .menu-link{
+  color: #fff;
+  text-decoration: none;
+  position: relative;
+  display: inline-flex;
+  overflow: hidden;
+}
+
+
+.Menu-bar ul li {
+    width: 140px;
+    margin: 15px;
+    padding: 15px;
+}
+
+
+.Menu-bar ul li i{
+    color: yellow;
+    padding: 5px;
+}
+
+.footer .logo
+{
+  text-align: left;
+  justify-content: center;
+  align-items: center;
+  line-height: var(--header-height);
+  font-size: 50px;
+  color: black;
+  margin-right: 10px;
+  padding-left: 60px;
+}
+  
+.local{
+  font-size: 25px;
+  padding-left: 60px;
+}
+  
+.phone{
+  font-size: 25px;
+  padding-left: 60px;
+}
+  
+.footer{
+  background:  rgb(155, 155, 240);
+  border-radius: 6px;
+  display: grid;
+  grid-template-columns: auto auto auto;
+}
+  
+.email{
+  font-size: 25px;
+  padding-left: 60px;
+}
+  
+.gg{
+  font-size: 35px;
+  padding-left: 60px;
+    
+}
+  
+.fb{
+  text-align: right;
+  font-size: 25px;
+  padding-right: 40px;
+  padding-top: 80px;
+}
+  
+.zalo{
+  text-align: right;
+  font-size: 25px;
+  padding-right: 40px;
+}
+  
+.youtube{
+  text-align: right;
+  font-size: 25px;
+  padding-right: 40px;
+}
+  
+.dak
+{
+  text-align: left;
+  font-size: 25px;
+  padding-right: 40px;
+  padding-top: 45px;
+}
+
+.line-effect{
+  width: 0;
+  height: 2px;
+  background-color: whitesmoke;
+  position: fixed;
+  pointer-events: none;
+  transition: all 0.4s;
+  
+}
+
+.intro img{
+  width:100%;
+  height:850px;
+
+}
+
+.intro h2{
+  text-align: center;
+  font-size: 45px;
+  font-weight: bold;
+  color:rgb(158, 232, 207);
+  background-color: gray;
+  height: 70px;
+  margin-top:0;
+  padding-top:9px;
+}
+
+.intro .logo1{
+  color: rgb(248, 82, 82);
+  font-size: 45px;
+  font-weight: bold;
+}
+
+.text
+{
+  font-size: 30px;
+  font-weight: 150;
+  margin-left: 200px;
+  margin-right:200px;
+  margin-top: 40px;
+}
+.text p
+{
+  margin-top: 30px;
+}
+
+.h2-intro
+{
+  font-size: 45px;
+  padding: 30px;
+  font-weight: bold;
+  text-align: center;
+  color: #d096e7;
+}
+
+.person{
+  display:grid;
+  justify-content: center;
+  text-align: center;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin-left: 250px;
+  margin-right: 250px;
+}
+
+.person .Bao
+{
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  background: linear-gradient(#9b59b6, #3498db);
+  transition: 1s;
+  overflow: hidden;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.person .Bao:hover
+{
+  width:350px;
+  height:450px;
+  border-radius: 10px;
+  background: linear-gradient(#9b59b6, #3498db);
+}
+
+.person .Bao img
+{
+  width: 200px;
+  height:200px;
+  border-radius: 50%;
+  border: 5px solid #fff;
+  margin: 20px auto;
+  cursor: pointer;
+  transition: 0.3s;
+  position: relative;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.person .Bao .icon
+{
+  position:absolute;
+  display: flex;
+  flex-direction: column;
+  transform: translateX(-60px);
+  opacity: 0;
+}
+
+.person .Bao:hover .icon
+{
+ 
+  transform: translateX(10px);
+  opacity: 1;
+  transition: 1.2s;
+}
+
+
+.person .Bao .icon i
+{
+  border-radius: 50%;
+  border: 10px solid #fff;
+  font-size: 25px;
+  background: #fff;
+  margin-top: 10px;
+  padding: 5px;
+}
+.person .Bao img.active{
+  width:350px;
+  height:350px;
+  margin:0;
+  border: 5px solid #fff;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.person .Bao h2
+{
+  color: #fff;
+}
+
+.person .Bao p{
+  font-size: 20px;
+  font-weight: 150;
+}
+
+.person .Bao button
+{
+  height: 30px;
+  width: 100px;
+  border: 5px solid pink;
+}
+
+.person .Hoang
+{
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  background: linear-gradient(#9b59b6, #3498db);
+  transition: 1s;
+  overflow: hidden;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.person .Hoang:hover
+{
+  width:350px;
+  height:450px;
+  border-radius: 10px;
+  background: linear-gradient(#9b59b6, #3498db);
+}
+
+.person .Hoang img
+{
+  width: 200px;
+  height:200px;
+  border-radius: 50%;
+  border: 5px solid #fff;
+  margin: 20px auto;
+  cursor: pointer;
+  transition: 0.3s;
+  position: relative;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.person .Hoang .icon
+{
+  position:absolute;
+  display: flex;
+  flex-direction: column;
+  transform: translateX(-60px);
+  opacity: 0;
+}
+
+.person .Hoang:hover .icon
+{
+ 
+  transform: translateX(10px);
+  opacity: 1;
+  transition: 1.2s;
+}
+
+
+.person .Hoang .icon i
+{
+  border-radius: 50%;
+  border: 10px solid #fff;
+  font-size: 25px;
+  background: #fff;
+  margin-top: 10px;
+  padding: 5px;
+}
+.person .Hoang img.active{
+  width:350px;
+  height:350px;
+  margin:0;
+  border: 5px solid #fff;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.person .Hoang h2
+{
+  color: #fff;
+}
+
+.person .Hoang p{
+  font-size: 20px;
+  font-weight: 150;
+}
+
+.person .Hoang button
+{
+  height: 30px;
+  width: 100px;
+  border: 5px solid pink;
+}
+
+.person .Quan
+{
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  background: linear-gradient(#9b59b6, #3498db);
+  transition: 1s;
+  overflow: hidden;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.person .Quan:hover
+{
+  width:350px;
+  height:450px;
+  border-radius: 10px;
+  background: linear-gradient(#9b59b6, #3498db);
+}
+
+.person .Quan img
+{
+  
+  width: 200px;
+  height:200px;
+  border-radius: 50%;
+  border: 5px solid #fff;
+  margin: 20px auto;
+  cursor: pointer;
+  transition: 0.3s;
+  position: relative;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.person .Quan .icon
+{
+  position:absolute;
+  display: flex;
+  flex-direction: column;
+  transform: translateX(-60px);
+  opacity: 0;
+}
+
+.person .Quan:hover .icon
+{
+ 
+  transform: translateX(10px);
+  opacity: 1;
+  transition: 1.2s;
+}
+
+
+.person .Quan .icon i
+{
+  border-radius: 50%;
+  border: 10px solid #fff;
+  font-size: 25px;
+  background: #fff;
+  margin-top: 10px;
+  padding: 5px;
+}
+.person .Quan img.active{
+  width:350px;
+  height:350px;
+  margin:0;
+  border: 5px solid #fff;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.person .Quan h2
+{
+  color: #fff;
+}
+
+.person .Quan p{
+  font-size: 20px;
+  font-weight: 150;
+}
+
+.person .Quan button
+{
+  height: 30px;
+  width: 100px;
+  border: 5px solid pink;
+}
+
+.nhanxet h3{
+  font-size: 45px;
+  text-align: center;
+  color: rgb(127, 248, 127);
+}
+.nhanxet p
+{
+  font-size: 25px;
+  margin-left: 200px;
+  margin-right:200px;
+
+}
